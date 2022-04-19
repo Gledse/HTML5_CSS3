@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <!--Vc não candastra o site no google,
+    SEO, optimização para mecanismos de busca-->
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu app web de vendas online <a href="https://e-shoponlineapp.web.app/#/">eShop</a></p> <!-- Essa tag A vem de âncora -->
+    
+    <p><mark>Para o utilizador navegar em um novo separador é necessário que a âncora fique assim, como o código abaixo.</mark></p>
+
+    <p>Você pode acessar o meu app web de vendas online <a href="https://e-shoponlineapp.web.app/#/" target="_blank" rel="external">eShop</a></p>
+    <!--A tag: target="_blank" serve para abrir um novo separador no navegador,  rel="external" página externa-->
+    <h2>Links internos</h2>
+    <p>Esta é a minha página se quiser vc pode acessar a minha <a href="pagina02.html" target="_self" rel="next">segunda página</a></p> 
+    <!--A tag: target="_self" serve para navegar no mesmo separador,  rel="next" próxima página-->
+    <p>Vc também pode acessar a nossa <a href="noticias/pagina03.html" target="_self" rel="next">página de noticias</a></p> 
+    <!-- "noticias/pagina03.html" significa que essa página esta dentro de uma pasta -->
+    <h2>Para abrir link pdf</h2>
+    <Ul>
+        <li><a href="Livro/tabelashtml.pdf" target="_self">Abrir o livro pdf de tabela html</a></li>
+    </Ul>
+    <h2>Links para download</h2>
+    <Ul>
+        <li><a href="Livro/tabelashtml.pdf" download="tabelashtml.pdf" type="application/pdf">Baixar o livro pdf de tabela html</a></li> 
+    </Ul>
+    <!-- configuração type="application/pdf", todos midia types posso encontar no site: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+</body>
+</html>

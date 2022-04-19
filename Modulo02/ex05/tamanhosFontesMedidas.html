@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de Fontes e Medidas</title>
+    <style>
+        body{
+            font-family: 'work sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas:
+            cm, ml, in (polegada), px, (pt(ponto), pc(paica) não se recomenda para medidas em tela mas sim em papel)
+
+            Medidas Relativas:
+            em(ao tamanho actual da fonte);
+            ex(altura x de uma fonte);
+            rem(ao rute, fonte que esta configurada no body);
+            vw(largura da view port, tamanho da sua tela);
+            vh(altura da view por).
+            */
+            font-size: 1em; /* normalmente os navegadores usam 16px, geralmente 16px = 1em */
+            font-weight: normal; /* peso da fonte, usamos para deixar em negrito*/
+            /* lighter normal bold bolder */
+            font-style: italic; /* para deixar em italico */
+            text-decoration: underline;/* para deixar o texto sublinhado */
+        }
+        h1{
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            /* shorthand font 
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem architecto veniam labore esse deserunt id. Molestias eum velit ad facilis, non praesentium minima. Soluta expedita doloremque magnam corrupti error odio!</p>
+
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero? Perferendis exercitationem fugit commodi nemo et quos molestias facere reiciendis ut laborum provident maxime doloremque, error rem dignissimos quis eligendi.</p>
+</body>
+</html>

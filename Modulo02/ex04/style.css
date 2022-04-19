@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*site: css web safe font combinations*/
+}
+body{
+    background-image: linear-gradient(to right, #ABA9BF, #495867);
+}
+main{
+    background-color: white;
+    border-radius: 20px; /*borda aredondada*/
+    box-shadow: 5px 5px 15px #12161a;/* tag para criar sombra: 1 parâmetro é quanto essa sombra vai andar para o lado, 2 pra baixo, 3 espalhar e o 4 transparência*/
+    width: 600px; /*largura*/
+    padding: 10px; /*aocoxamento*/
+    margin: auto; /*sempre vai centralizar o conteudo ou seja o main*/
+}
+h1{
+    color: #263a75;
+    text-align: center; /*texto no centro*/
+    text-shadow: 1px 1px 2px #121b38;
+}
+h2{
+    color: #495867;
+}
+p{
+    text-align: justify; /*texto justificado*/
+}

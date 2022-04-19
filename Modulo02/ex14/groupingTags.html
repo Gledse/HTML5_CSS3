@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em Html5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(85, 85, 85);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px; /* Raio da borda >>>  border-radius: 50% para fazer um circulo; */
+        }
+        nav {
+            background-color:rgb(110, 108, 108);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.308); /* Sombra */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(110, 108, 108);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head> <!-- Cabeça >>> são as configurações do seu site-->
+<body> <!-- Tags semâtica abaixo, apenas é um exemplo de uma layout, posso organizar do jeito que eu quiser, por uma tag dentro da outra por aí -->
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- nav >>> navegação, Aqui vc consegui colocar links sem precisar usar div -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Contúdo principal -->
+        <section id="assuntos"> <!-- sessão-->
+            <p>Esporte e Politica</p>
+        </section>
+        <section id="noticias">
+            <article> <!-- Artigo-->
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure mollitia hic iusto, molestiae ratione deserunt facilis repellendus voluptatum quod numquam, tempora, reiciendis voluptas! Sit alias consequatur cum illo. Accusamus, quisquam!</p>
+                <aside> <!-- Conteúdo períferico relativo ao artigo, conteúdo do artigo-->
+                    <p>Artigo escrito por autor José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Roda pé-->
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+</body>
+</html>

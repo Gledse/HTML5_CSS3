@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos difrentes ou simplesmente aumente e diminui o tamanho do seu navegador</p>
+
+    <picture> <!-- essa tag significa: vai aparecer uma imagem aqui -->
+
+        <!--O source tem que estar bem organizado, do pequeno ao médio e grande, se não estiver com essa hierarquia, não irá mostrar a imagem-->
+
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png"> <!-- se a imagem tiver uma largura de 0px até 750px irá mostrar uma imagem pequena(P) -->
+
+        <source media="(max-width: 1050px)"  srcset="Imagens/foto-m.png"type="image/png"> <!-- se a imagem tiver uma largura superior a 750px  ou seja de 751px até 1050px irá mostrar uma imagem média(M) -->
+
+        <!-- media="(max-width: 1050px)" vai carregar uma imagem com a largura maxima de 1050px
+
+        media="(min-width: 300px) vai carregar uma imagem com a largura minima de 300px -->
+        <img src="Imagens/foto-g.png" alt="imagem flexivel"> <!-- se a imagem tiver uma largura superior a 1050px irá mostrar uma imagem grande(G)-->
+    </picture>
+</body>
+</html>

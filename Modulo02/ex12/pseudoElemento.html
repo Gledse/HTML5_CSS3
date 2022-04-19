@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elemntos em CSS</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{ /* Configuração da cor dos sites não visitados */
+            color: red; 
+            text-decoration: none; /* irá tirar o sublinhado */
+            font-weight: bold; /* Negrito */
+        }
+        a:visited { /* Configuração da cor dos sites visitados */
+            color: blue;
+        }
+        a:hover { /* basta passar o mouse por cima ficará: */
+            color: black; /* sublinhado com a cor preta*/
+            text-decoration: underline; /* irá por o sublinhado */
+        }
+        a:active { /* Quando é clicado ficará amarelo */
+            color: yellow;
+        }
+        .especial::before {
+            content: '=> ';
+            text-decoration: none;
+            color: darkgray;
+        }
+        a::after { /*pseudo-elemento duas vezes ponto :: */
+            content: '[link]'; /* content >>> Conteúdo */
+            text-decoration: none;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <!--  Por padrão CSS links dos sites
+        - visitados ficam com a cor roxa e  sublinhado
+        - não visitados ficam com a cor azul e sublinhado-->
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Gledse?tab=repositories" class="especial">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

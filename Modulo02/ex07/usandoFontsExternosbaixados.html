@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Fonts Externos baixados</title>
+    <style>
+        @font-face {
+            font-family: 'La';
+            src: url('fonts/La Petite Robe.ttf') format('truetype');
+            /*
+            Tipos de formatos
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple advanced Typography)
+            - svg
+            */
+        }
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        h1{
+            font-family: 'La', Helvetica, serif;
+            /*Site para encontrar fonts: fonts.google.com e dafont.com */
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Ferramenta para identificar fonts dentro de um site: chrome web store, dps pesquisar por: Fonts Ninja */
+        /* Ferramenta para identificar fonts dento de uma imagem: whatfontis.com, fontsquirrel.com, WhatTheFont */
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia doloribus provident assumenda dolore aliquam nemo. Maxime officia, quidem, minima asperiores alias nesciunt accusantium, unde earum perspiciatis optio itaque magnam!</p>
+    <h2>Teste</h2>
+</body>
+</html>

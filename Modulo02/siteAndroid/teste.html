@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TResponsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; /* borda do main */
+
+            min-width: 320px; /* A tela ficará no minimo com 320px para dispositivos pequenos */
+            max-width: 800px; /* A tela ficará no máximo com 800px para dispositivos maiores */
+            margin: auto; /* centralizar o conteudo */
+        }
+        img {
+            width: 100%; /* centralizar a imagem */
+        }
+    </style>
+</head>
+<body> <!-- Usamos uma ferramenta: windows resizer-->
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, qui laborum sed voluptas deleniti corporis! Sit illum officiis dolorum quod quis est, quasi consectetur excepturi </p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt=""> <!-- se a imagem for menor que 600px a imagem ficara assim como ta na esquerda-->
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium minima dolores quaerat amet commodi aut laboriosam tempora, sunt earum sequi, atque obcaecati, eveniet inventore velit vero? Ducimus doloremque possimus nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, qui laborum sed voluptas deleniti corporis! Sit illum officiis dolorum quod quis est, quasi consectetur excepturi dolore in incidunt minus quisquam!</p>
+    </main>
+</body>
+</html>

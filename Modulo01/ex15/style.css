@@ -1,0 +1,16 @@
+@charset "UTF-8"; /* Regra, Compactibilidade com acentuações */
+body{ /*cconfiguração da area body ou corpo */
+    background-color: rgb(174, 199, 162); /* Cor do fundo do site */
+    font-family: Arial, Helvetica, sans-serif; /* fonte das letras */
+    font-size: 17px; /* tamanho das letras */
+}
+h1 { /* Selector para h1 */
+    color: rgb(43, 27, 187); /*cor da letra*/
+    background-color: rgb(40, 162, 218); /*cor do fundo*/
+}
+h2 {
+    color: brown;
+}
+p {
+    text-align: justify; /* todo o meu texto está alinhado*/
+}

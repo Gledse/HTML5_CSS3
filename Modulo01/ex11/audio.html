@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    
+    <audio src="Helio Beatz ft  Edvan Allen ft  Khadaf Jr - Isctem (320  kbps) (mp3paw.tv).mp3" controls autoplay ></audio>
+    <!-- controls: serve para aparecer o controlo de áudio -->
+
+    <h2>Áudio 02</h2>
+    
+    <audio preload="metadata" controls loop> <!-- preload="metadata": irá mostrar informações como: duração do áudio, etc, controls loop: quando for achegar no final do áudio irá recomeçar-->
+
+        <!-- A ordem é importante, se ele não conseguir reproduzir mpeg ou mp3, ele vai tentar o arquivo ogg depois o arquivo wav-->
+        <source src="happy-mistake.mp3" type="audio/mpeg">
+        <source src="happy-mistake.mp3" type="audio/ogg">
+        <source src="happy-mistake.mp3" type="audio/wav"> <!-- arquivos wav, são arquivos pesados-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio</p>
+        <!-- se não conseguir nenhum arquivo vai mostrar essa mensagem desse parágrafo acima -->
+    </audio>
+</body>
+</html>

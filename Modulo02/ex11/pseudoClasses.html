@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes em CSS</title>
+    <style>
+        div{
+            display: inline-block; /* Tudo na mesma linha */
+            background-color: lightgrey;
+            border: 1px solid black; /* borda >>> largura, tipo, cor */
+            text-align: center;
+            height: 200px;/* Altura */
+            width: 150px;/* Largura */
+        }
+        /* Pseudo class é : */
+        div:hover {
+            background-color: yellow; /* hover - quando eu passar o mouse por cima dele, faz uma configuração de estado
+            - significa que quando eu for a passar o mouse em cima de qualquer "div" irá ficar com o fundo amarelo */
+        }
+    </style>
+</head>
+<body>
+    <div id="d01">01</div> <!-- Essa tag é um espaço qualquer, uma "div" ocupa uma linha inteira -->
+    <div id="d02">02</div>
+    <div id="d03">03</div>
+</body>
+</html>

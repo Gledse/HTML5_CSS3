@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+Em HTML é id = em CSS é #
+Em HTML é class = em CSS é .
+
+- O nome do id do HTML e CSS tem de ser igual
+- Não posso usar a mesma configuração do id para outros lugar
+uso a "class" ao invés  de "id"
+- Dar nome pelas funções e não pela forma
+*/
+body{
+    background-color: #a1e994;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #2B4227;
+}
+h1#principal {
+    text-align: center;
+    background-color: #3ca855;
+    color: white;
+}
+.basico{
+    color: #2f7e41;
+    font-weight: bold;
+}
+.intermediario{
+    color: #9E8C17;
+}
+.avancado{
+    color: #9C2E1E;
+}
+.destaque{
+    background-color: #f1d10050;
+}
