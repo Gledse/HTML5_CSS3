@@ -1,2 +1,2 @@
 # HTML5_CSS3
- Repositório com projectos usando HTML, CSS e JavaScript e algumas imagens das aulas anotadas
+ Repositório com projectos de HTML, CSS e e algumas imagens das aulas anotadas
