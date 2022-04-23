@@ -10,14 +10,21 @@
             height: 100vh;
             background-color: black; /* sempre que no fundo do site tiver uma imagem, tenho de add uma cor no fundo */
             background-image: url("imagens/wallpaper002.jpg");
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             background-position: center top;
             background-size: cover; /* irá adaptar a imagem ao tamanho da tela, viewport
             contain >> faz com que a imagem esteja 100% exibida */
+            background-attachment: fixed; /* A imagem ficará fixa, scroll >> a imagem irá rolar juntamente com o conteúdo*/
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachement
+            */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover  ;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +35,12 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde hic officia voluptas iure, consectetur dignissimos excepturi. Quis, sint sapiente. Accusantium dolores maxime, veritatis esse dicta nostrum. Esse, deserunt aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex? Porro quisquam hic fuga tenetur autem suscipit inventore vel, provident consequuntur cum saepe perferendis soluta excepturi aliquid! Molestias, exercitationem nostrum!</p>
+        <h2>Exemplo</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde hic officia voluptas iure, consectetur dignissimos excepturi. Quis, sint sapiente. Accusantium dolores maxime, veritatis esse dicta nostrum. Esse, deserunt aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex? Porro quisquam hic fuga tenetur autem suscipit inventore vel, provident consequuntur cum saepe perferendis soluta excepturi aliquid! Molestias, exercitationem nostrum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde hic officia voluptas iure, consectetur dignissimos excepturi. Quis, sint sapiente. Accusantium dolores maxime, veritatis esse dicta nostrum. Esse, deserunt aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex? Porro quisquam hic fuga tenetur autem suscipit inventore vel, provident consequuntur cum saepe perferendis soluta excepturi aliquid! Molestias, exercitationem nostrum!</p>
+        <h2>Mais um exemplo</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde hic officia voluptas iure, consectetur dignissimos excepturi. Quis, sint sapiente. Accusantium dolores maxime, veritatis esse dicta nostrum. Esse, deserunt aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex? Porro quisquam hic fuga tenetur autem suscipit inventore vel, provident consequuntur cum saepe perferendis soluta excepturi aliquid! Molestias, exercitationem nostrum!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde hic officia voluptas iure, consectetur dignissimos excepturi. Quis, sint sapiente. Accusantium dolores maxime, veritatis esse dicta nostrum. Esse, deserunt aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ex? Porro quisquam hic fuga tenetur autem suscipit inventore vel, provident consequuntur cum saepe perferendis soluta excepturi aliquid! Molestias, exercitationem nostrum!</p>
     </main>
 </body>
