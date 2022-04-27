@@ -9,58 +9,191 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         table {
-            width: 400px; /* largura da tabela */
-            height: 400px;
-            border-collapse: collapse; /* collapse: As celulas ficarão juntas 
-            separate: as celulas ficarão separadas */
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /* Configuração comportamental da minha tabela */
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: rgb(71, 71, 71);
+            color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky; /* Configuração: colavel ou grudavel */
+            top: -1px; /* vai colar na parte -1px */
+            background-color: rgb(71, 71, 71);
         }
 
-        td {
-            border: 1px solid black; /* Borda em cada dado */
-            padding: 8px;
-            text-align: center; /* alinhamento horizontal */
-            vertical-align: middle; /* alinhamento vertical */
+        /* Efeito zebrado */
+        tbody > tr:nth-child(odd) { /* ou posso subistituir por 2n-1 >>> cor branca nas linhas impares */
+            background-color: white;
         }
-        .numero {
+
+        tbody > tr:nth-child(even){ /* 2n significa que de duas em duas ele vai colocar a cor sinza (uma linha sinza outra não) >>> cor sinza nas linhas paris */
+            background-color: lightgray;
+        }
+
+        td.num {
             text-align: right;
         }
-
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Uso de tabelas grandes</h1>
     <!--
-        HIERARQUIA DE TABELAS (simples)
-        TABLE = tabela
-            TABLE ROW = Linha de tabela
-                TABLE HEADER = Cabeçalho de tabela
-                TABLE DATA = dado de tabela
-
-        >>> Se os elementos não estiverem em hierarquia certa, os dados vão aparecer ou em cima ou em baixo da tabela
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION = legenda da tabela
+            THEAD = cabeça da tabela
+                TR, TD, TH
+            TBODY = corpo da tabela
+                TR, TD, TH
+            TFOOT = roda pé da tabela
+                TR, TD, TH
     -->
     <table>
-        <tr> <!-- TABLE ROW, Primeira linha -->
-            <td>A1</td>  <!-- TABLE DATA -->
-            <td>B1</td>
-            <td>C1</td>
+
+        <caption> <!-- legenda da tabela -->
+            População das Unidades Federativas
+        </caption>
+
+       <thead>  <!-- cabeça da tabela -->
+        <tr>  <!-- Linha -->
+            <th scope="col">Estado</th>  <!-- Cabeçalho, Usamos th para titulos -->
+            <th scope="col" style="width: 50px;">População</th> <!-- scope="col" usamos para informar ao HTML que isso é um titulo da coluna... -->
         </tr>
-        <tr class="linha"> <!-- TABLE ROW, Segunda linha -->
-            <td>A2</td>  <!-- TABLE DATA -->
-            <td>B2</td>
-            <td class="numero">C2</td>
+       </thead>
+
+       <tbody>  <!-- Corpo da tabela -->
+        <tr>
+            <td>São Paulo</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
         </tr>
-        <tr> <!-- TABLE ROW, Terceira linha -->
-            <td>A3</td>  <!-- TABLE DATA -->
-            <td>B3</td>
-            <td class="numero">C3</td>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21.168.791</td>
         </tr>
-        <tr> <!-- TABLE ROW, Quarta linha -->
-            <td>A4</td>  <!-- TABLE DATA -->
-            <td class="dado">B4</td>
-            <td>C4</td>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17.264.943</td>
         </tr>
+        <tr>
+            <td>Bahia</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Permambuco</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>  <!-- Dado -->
+            <td class="num">58.985.649</td>
+        </tr>
+        <tr>
+            <td>Espirito Santo</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Paraiba</td>
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Piaui</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Serdipe</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Rondônia</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Tocantis</td>  <!-- Dado -->
+            <td class="num">45.919.049</td>
+        </tr>
+        <tr>
+            <td>Acre</td>
+            <td class="num">21.168.791</td>
+        </tr>
+        <tr>
+            <td>Amapâ</td>
+            <td class="num">17.264.943</td>
+        </tr>
+        <tr>
+            <td>Roraima</td>
+            <td class="num">17.264.943</td>
+        </tr>
+       </tbody>
+
+       <tfoot>  <!-- Roda pé da tabela -->
+        <tr>
+            <th scope="row">Total de Habitantes</th>  <!-- Usamos th para titulos -->
+
+            <!-- scope="row" usamos para informar ao HTML que isso é um titulo da linha... -->
+            <td class="num"><strong>418.345.355</strong></td>  <!-- dado -->
+        </tr>
+       </tfoot>
     </table>
 </body>
 </html>
